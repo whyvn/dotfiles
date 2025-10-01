@@ -1,5 +1,3 @@
-# Luke's config for the Zoomer Shell
-
 # setbg Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
 PS1="%{$fg[pink]%}%n@%M %{$fg[pink]%}%~ %{$reset_color%}% $ "
@@ -40,5 +38,7 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # ocaml stuff
-# [[ ! -r ~/.opam/opam-init/init.zsh ]] || source ~/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-# eval $(opam env --switch=default)
+if command -v opam >/dev/null 2>&1; then
+    [[ ! -r ~/.opam/opam-init/init.zsh ]] || source ~/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+    eval $(opam env --switch=default)
+fi
