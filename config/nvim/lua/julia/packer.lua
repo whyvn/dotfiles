@@ -4,7 +4,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'                    -- packer
     use 'mbbill/undotree'                           -- undo tree
     use 'norcalli/nvim-colorizer.lua'               -- colourizer
-    use 'Alligator/accent.vim'    -- color scheme
+    use 'Alligator/accent.vim'                      -- color scheme
     use {                                           -- comments
         'numToStr/Comment.nvim',
         config = function()
@@ -29,12 +29,11 @@ return require('packer').startup(function(use)
             -- Autocompletion
             {'hrsh7th/nvim-cmp'},
             {'hrsh7th/cmp-nvim-lsp'},
+
             {'L3MON4D3/LuaSnip'},
         }
     }
-    use {
-        'lervag/vimtex',
-        init = function() vim.g.vimtex_view_method = "zathura" end
-    }
-    use 'tidalcycles/vim-tidal'
+    use 'juliaEditorSupport/julia-vim'
+    -- use 'tlaplus-community/tlaplus-nvim-plugin'
+    -- use 'tidalcycles/vim-tidal'
 end)

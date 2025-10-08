@@ -33,6 +33,10 @@ vim.opt.signcolumn = "yes"              -- always display multiple columns for s
 vim.opt.cmdheight = 2                   -- 2 line cmd
 vim.opt.showmode = false                -- dont show mode on last line
 
+-- latex to unicode using julia plugin --
+vim.g.latex_to_unicode_file_types = ".*"
+vim.g.latex_to_unicode_auto = 1
+
 vim.opt.background  = "dark"            -- set background to dark
 vim.opt.termguicolors = true
 -- vim.g.accent_colour = 'yellow'       -- accent is changed after `colorscheme`
