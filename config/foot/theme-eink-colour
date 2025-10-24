@@ -1,0 +1,21 @@
+[colors]
+foreground = 333333
+background = CCCCCC
+
+regular0 = D1D1D1
+regular1 = 8A3E39
+regular2 = 6A9B3E
+regular3 = C4A100
+regular4 = 3E77B2
+regular5 = A87CC7
+regular6 = 2B7597
+regular7 = 3F3F3F
+
+bright0 = 999999
+bright1 = F57574
+bright2 = A3D276
+bright3 = F3E04A
+bright4 = 81AEE0
+bright5 = D3A9E1
+bright6 = 4D8C96
+bright7 = FFFFFF
