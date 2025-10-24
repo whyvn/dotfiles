@@ -58,6 +58,9 @@ elseif colourss == 'light' then
     vim.opt.background  = "light"
     vim.cmd.colorscheme "e-ink"             -- color scheme
 end
+for i = 0,15 do
+    vim.g[('terminal_color_%d'):format(i)] = 'NONE'
+end
 
 -- misc --
 vim.opt.mouse = ""                      -- disable mouse
