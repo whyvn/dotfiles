@@ -5,6 +5,7 @@ return require('packer').startup(function(use)
     use 'mbbill/undotree'                           -- undo tree
     use 'norcalli/nvim-colorizer.lua'               -- colourizer
     use 'Alligator/accent.vim'                      -- color scheme
+    use 'e-ink-colorscheme/e-ink.nvim'              -- color scheme
     use {                                           -- comments
         'numToStr/Comment.nvim',
         config = function()
