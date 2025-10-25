@@ -70,6 +70,10 @@ lsp.set_sign_icons({
   info = 'I'
 })
 
+for _, diag in ipairs({'Error', 'Warn', 'Info', 'Hint'}) do
+    vim.cmd.highlight(('Diagnostic%s guifg=NONE'):format(diag));
+end
+
 -- echo diagnostics
 local diag = require("echo-diagnostics")
 
