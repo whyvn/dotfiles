@@ -1,6 +1,6 @@
 # setbg Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
-PS1="%{$fg[pink]%}%n@%M %{$fg[pink]%}%~ %{$reset_color%}% $ "
+PS1=
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
 
