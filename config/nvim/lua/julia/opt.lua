@@ -37,8 +37,8 @@ vim.opt.showmode = false                -- dont show mode on last line
 vim.g.latex_to_unicode_file_types = ".*"
 vim.g.latex_to_unicode_auto = 1
 
+-- colours
 vim.opt.termguicolors = true
-
 colourss = 'light'
 if colourss == 'dark' then
     vim.g.accent_no_bg = true
@@ -56,7 +56,7 @@ if colourss == 'dark' then
     vim.cmd.highlight('StatusLine ctermbg=NONE guibg=NONE')
 elseif colourss == 'light' then
     vim.opt.background  = "light"
-    vim.cmd.colorscheme "e-ink"             -- color scheme
+    vim.cmd.colorscheme "e-ink"
 end
 for i = 0,15 do
     vim.g[('terminal_color_%d'):format(i)] = 'NONE'
@@ -72,6 +72,10 @@ vim.cmd.filetype("plugin on")           -- enable filetype plugins
 vim.g.zig_fmt_autosave = false          -- zls is dumb
 
 vim.opt.guicursor = "n-v-i-c:block-Cursor" -- always block cursor
+
+
+-- cornelis --
+-- vim.g.cornelis_use_global_binary = 1
 
 -- vimtex --
 vim.g.vimtex_view_method        = 'zathura'
