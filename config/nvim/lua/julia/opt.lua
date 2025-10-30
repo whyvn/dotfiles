@@ -26,12 +26,20 @@ vim.opt.smartcase = true                -- only match cases when cases are used
 vim.opt.iskeyword=vim.opt.iskeyword-"_" -- underscores work like spaces when jumping words
 
 -- ui --
-vim.opt.number = true                   -- line numbers
-vim.opt.relativenumber = true           -- relative line numbers
-vim.opt.showmode = false                -- disable line number visibility in visual mode
-vim.opt.signcolumn = "yes"              -- always display multiple columns for signs
-vim.opt.cmdheight = 2                   -- 2 line cmd
-vim.opt.showmode = false                -- dont show mode on last line
+vim.opt.showmode        = false          -- disable line number visibility in visual mode
+zen = false
+function zentoggle()
+    zen = not zen
+
+    vim.opt.number          = not zen
+    vim.opt.laststatus      = zen and 0 or 2
+    vim.opt.relativenumber  = not zen
+    vim.opt.signcolumn      = zen and "no" or "yes"
+    vim.opt.cmdheight       = zen and  0   or 2
+end
+
+vim.keymap.set('n' ,'zen', zentoggle)
+zentoggle()
 
 -- latex to unicode using julia plugin --
 vim.g.latex_to_unicode_file_types = ".*"
@@ -75,7 +83,7 @@ vim.opt.guicursor = "n-v-i-c:block-Cursor" -- always block cursor
 
 
 -- cornelis --
--- vim.g.cornelis_use_global_binary = 1
+vim.g.cornelis_use_global_binary = 1
 
 -- vimtex --
 vim.g.vimtex_view_method        = 'zathura'
