@@ -39,3 +39,10 @@ vim.keymap.set('n', 'ff', function()
     and '<Plug>(comment_toggle_linewise_current)'
     or '<Plug>(comment_toggle_linewise_count)'
 end, { expr = true })                                                       -- toggle comments
+
+
+vim.keymap.set("n", "zen", "<cmd>Goyo<CR>")                                 -- toggle goyo zen mode
+-- vim.api.nvim_create_autocmd("GoyoEnter", { callback = function() vim.cmd("Limelight") end })
+-- vim.api.nvim_create_autocmd("GoyoLeave", { callback = function() vim.cmd("Limelight!") end })
+vim.cmd("autocmd! User GoyoEnter Limelight")
+vim.cmd("autocmd! User GoyoLeave Limelight!")

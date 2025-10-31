@@ -27,7 +27,8 @@ vim.opt.iskeyword=vim.opt.iskeyword-"_" -- underscores work like spaces when jum
 
 -- ui --
 vim.opt.showmode        = false          -- disable line number visibility in visual mode
-zen = false
+
+zen = true
 function zentoggle()
     zen = not zen
 
@@ -37,8 +38,7 @@ function zentoggle()
     vim.opt.signcolumn      = zen and "no" or "yes"
     vim.opt.cmdheight       = zen and  0   or 2
 end
-
-vim.keymap.set('n' ,'zen', zentoggle)
+-- vim.keymap.set('n' ,'zen', zentoggle) -- replaced with goyo
 zentoggle()
 
 -- latex to unicode using julia plugin --

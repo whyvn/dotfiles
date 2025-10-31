@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
         config = function() require("nvim-autopairs").setup {} end
     }
     use 'seblj/nvim-echo-diagnostics'
-    use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+    use 'nvim-treesitter/nvim-treesitter'
     use {                                           -- lsp
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
@@ -37,6 +37,9 @@ return require('packer').startup(function(use)
     use 'juliaEditorSupport/julia-vim'              -- unicode characters like \alpha -> α
     -- use 'tlaplus-community/tlaplus-nvim-plugin'
     -- use 'tidalcycles/vim-tidal'
+
+    use 'junegunn/goyo.vim'                         -- zen modee :)
+    use 'junegunn/limelight.vim'                    -- hghilight for stuff
 
     language_specific = true
     if language_specific then
