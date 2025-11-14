@@ -6,16 +6,6 @@ return require('packer').startup(function(use)
     use 'norcalli/nvim-colorizer.lua'               -- colourizer
     use 'Alligator/accent.vim'                      -- color scheme
     use 'e-ink-colorscheme/e-ink.nvim'              -- color scheme
-    use {                                           -- comments
-        'numToStr/Comment.nvim',
-        config = function()
-            require('Comment').setup()
-        end
-    }
-    use {
-        'windwp/nvim-autopairs',
-        config = function() require("nvim-autopairs").setup {} end
-    }
     use 'seblj/nvim-echo-diagnostics'
     use 'nvim-treesitter/nvim-treesitter'
     use {                                           -- lsp

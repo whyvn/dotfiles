@@ -31,7 +31,6 @@ vim.keymap.set("n", "<A-k>", "<cmd>cprev<CR>");
 
 -- plugin related --
 vim.keymap.set("n", "<A-r>", function() vim.cmd("UndotreeToggle") end)      -- toggle undo tree ui
-vim.keymap.set("x", "ff", "<Plug>(comment_toggle_linewise_visual)")         -- toggle comments
 vim.keymap.set("n", "<leader>mr", ":!pandoc -t pdf \"%:p\" -o \"%:t:r.pdf\"<CR>") -- vimtex sub
 vim.keymap.set("n", "<leader>tr", ":!typst compile % %:t:r.pdf<CR>")
 vim.keymap.set('n', 'ff', function()
@@ -41,8 +40,11 @@ vim.keymap.set('n', 'ff', function()
 end, { expr = true })                                                       -- toggle comments
 
 
-vim.keymap.set("n", "zen", "<cmd>Goyo<CR>")                                 -- toggle goyo zen mode
--- vim.api.nvim_create_autocmd("GoyoEnter", { callback = function() vim.cmd("Limelight") end })
--- vim.api.nvim_create_autocmd("GoyoLeave", { callback = function() vim.cmd("Limelight!") end })
-vim.cmd("autocmd! User GoyoEnter Limelight")
-vim.cmd("autocmd! User GoyoLeave Limelight!")
+vim.keymap.set("n", "zen", "<cmd>Goyo<cr>")                                 -- toggle goyo zen mode
+vim.cmd([[
+  augroup GoyoLimelight
+    autocmd!
+    autocmd User GoyoEnter   set cmdheight=0 | Limelight
+    autocmd User GoyoLeave   set cmdheight=2 | Limelight!
+  augroup END
+]])

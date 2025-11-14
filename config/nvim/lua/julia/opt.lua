@@ -27,19 +27,10 @@ vim.opt.iskeyword=vim.opt.iskeyword-"_" -- underscores work like spaces when jum
 
 -- ui --
 vim.opt.showmode        = false          -- disable line number visibility in visual mode
-
-zen = true
-function zentoggle()
-    zen = not zen
-
-    vim.opt.number          = not zen
-    vim.opt.laststatus      = zen and 0 or 2
-    vim.opt.relativenumber  = not zen
-    vim.opt.signcolumn      = zen and "no" or "yes"
-    vim.opt.cmdheight       = zen and  0   or 2
-end
--- vim.keymap.set('n' ,'zen', zentoggle) -- replaced with goyo
-zentoggle()
+vim.opt.number          = true
+vim.opt.relativenumber  = true
+vim.opt.signcolumn      = "yes"
+vim.opt.cmdheight       = 2
 
 -- latex to unicode using julia plugin --
 vim.g.latex_to_unicode_file_types = ".*"
@@ -81,7 +72,6 @@ vim.g.zig_fmt_autosave = false          -- zls is dumb
 
 vim.opt.guicursor = "n-v-i-c:block-Cursor" -- always block cursor
 
-
 -- cornelis --
 vim.g.cornelis_use_global_binary = 1
 
@@ -90,7 +80,6 @@ vim.g.vimtex_view_method        = 'zathura'
 vim.g.vimtex_compiler_method    = 'latexrun'
 
 -- auto commands --
-vim.api.nvim_create_autocmd("VimEnter", { callback = function() vim.opt.formatoptions = vim.opt.formatoptions - { "c","r","o" } end, }) -- remove comment on newline
 vim.api.nvim_create_autocmd("VimEnter", { callback = function() vim.cmd.highlight("clear SignColumn") end, })                          -- clear gutter colours
 vim.api.nvim_create_autocmd({ "BufWritePre" }, { -- remove trailing whitespace
     callback = function()
