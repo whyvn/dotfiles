@@ -1,0 +1,28 @@
+{
+  "timeStamp": 1763428440389,
+  "version": "1.67.0",
+  "userSettings": {
+    "importedLists": []
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-unbreak",
+    "ublock-quick-fixes",
+    "easylist",
+    "easyprivacy",
+    "urlhaus-1",
+    "plowe-0"
+  ],
+  "hiddenSettings": {},
+  "whitelist": [
+    "chrome-extension-scheme",
+    "moz-extension-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
+  "userFilters": "! Oct 25, 2025 https://www.youtube.com\nwww.youtube.com##ytd-watch-next-secondary-results-renderer.ytd-watch-flexy.style-scope > .ytd-watch-next-secondary-results-renderer.style-scope\nwww.youtube.com###contents\n\n! Oct 29, 2025 https://www.reddit.com\nwww.reddit.com##.flex-auto.right-sidebar-contents\nwww.reddit.com##.overscroll-contain.px-md.box-border.bg-neutral-background.overflow-x-hidden.overflow-y-scroll.styled-scrollbars.h-screen-without-header.w-full.block.nd\\:visible\nwww.reddit.com###flex-left-nav-container\nwww.reddit.com##.px-md.border-neutral-border.border-b.border-0.border-solid.pointer-events-auto.bg-neutral-background.v2\n\n! Nov 9, 2025 https://stackoverflow.com\nstackoverflow.com##.js-top-bar.l0.t0.ps-fixed.s-topbar\nstackoverflow.com##.ps-relative.js-pinned-left-sidebar.left-sidebar\nstackoverflow.com##.show-votes\nstackoverflow.com##.bc-black-200.bb.mb16.pb8.fw-wrap.d-flex\n\n! Nov 18, 2025 https://www.google.com\nwww.google.com##.YNk70c.CvDJxb\nwww.google.com##.iFBYke.YNk70c\nwww.google.com##.y6Uyqe\nwww.google.com##.adDDi.PJI6ge.M6HR1c\nwww.google.com##.YNk70c.TrMVnc.f6F9Be\nwww.google.com##.NN8h5c\nwww.google.com###B2Jtyd\nwww.google.com##div.EjQTId.YNk70c:nth-of-type(1)\nwww.google.com##.E5eFb.Xx7Mif\nwww.google.com##.LoygGf\nwww.google.com##.xrOgrb\nwww.google.com##.GpHuwc.EDblX\nwww.google.com##.e0KErc.jBpNZc.vVVcqf.k5T88b.TQc1id\nwww.google.com##.uyS0S\nwww.google.com##.jEYSNd\nwww.google.com##.A6K0A > .cUnQKe > .Wt5Tfe > .adDDi.eJH8qe\nwww.google.com##.ilulF\nwww.google.com##.A6K0A > .cUnQKe\nwww.google.com##.Hdw6tb\nwww.google.com##.jGGQ5e.A9Y9g.kb0PBd > .yuRUbf > .b8lM7 > .V9tjod > .zReHs > .ojE3Fb.HGLrXd.ESMNde.notranslate > .q0vns > .DDKf1c > .Vwoesf.UnOTSe.eqA2re > .XNo5Ab\nwww.google.com##.jGGQ5e.A9Y9g.kb0PBd > .yuRUbf > .b8lM7 > .V9tjod > .zReHs > .ojE3Fb.HGLrXd.ESMNde.notranslate > .q0vns > .CA5RN > div > .VuuXrf\nwww.google.com##.kBE71d\nwww.google.com##.jGGQ5e.A9Y9g.kb0PBd > .yuRUbf > .b8lM7 > .V9tjod > .zReHs > .ojE3Fb.HGLrXd.ESMNde.notranslate > .q0vns > .H9lube\nwww.google.com##.xe8e1b > div > .b8lM7 > .V9tjod > .zReHs > .ojE3Fb.HGLrXd.ESMNde.notranslate > .q0vns > .H9lube\nwww.google.com##.Dk6Uvb\nwww.google.com##.WVV5ke > div\nwww.google.com##.jRKCUd\nwww.google.com##.vtSz8d\nwww.google.com###botstuff\nwww.google.com##.vt6azd.Ww4FFb > .adDDi\nwww.google.com##.HG5ZQb.EDblX\nwww.google.com##div.ULSxyf\nwww.google.com##svg\nwww.google.com##div.MjjYud:nth-of-type(3) > .A6K0A > .vt6azd.asEBEc.tF2Cxc.Ww4FFb.wHYlTd > .BToiNc.N54PNb > div.kb0PBd:nth-of-type(3) > div\nwww.google.com##.z1asCe.xTFaxe\nwww.google.com##.D6lY4c\n\n! Nov 18, 2025 https://en.wikipedia.org\nen.wikipedia.org##.no-font-mode-scale.mw-header.vector-header\nen.wikipedia.org##.no-font-mode-scale.vector-page-titlebar.mw-body-header\nen.wikipedia.org##.vector-body-before-content\nen.wikipedia.org##.vector-feature-custom-font-size-clientpref--excluded.vector-page-toolbar\nen.wikipedia.org##.mw-editsection\n\n! Nov 18, 2025 https://www.google.com\nwww.google.com##.wHYlTd.jmjoTe\nwww.google.com##.cHaqb.GvPZzd.tjvcx.qLRx3b\nwww.google.com##.cHaqb.GvPZzd.tjvcx\nwww.google.com##.q0vns"
+}
