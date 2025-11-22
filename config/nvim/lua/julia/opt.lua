@@ -65,6 +65,17 @@ end
 vim.opt.mouse = ""                      -- disable mouse
 vim.opt.title = true                    -- window title as file names and/or paths
 vim.opt.clipboard:append "unnamedplus"  -- always use the clipboard
+vim.g.clipboard = {                     -- for clipboard forwarding stuff thanks **tttttttttttttttt
+  name = 'OSC 52',
+  copy = {
+    ['+'] = require('vim.ui.clipboard.osc52').copy('+'),
+    ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
+  },
+  paste = {
+    ['+'] = require('vim.ui.clipboard.osc52').paste('+'),
+    ['*'] = require('vim.ui.clipboard.osc52').paste('*'),
+  },
+}
 vim.opt.scrolloff = 8                   -- 8 screen line space buffer
 vim.cmd.filetype("plugin on")           -- enable filetype plugins
 
