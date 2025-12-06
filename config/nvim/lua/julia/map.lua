@@ -3,7 +3,6 @@ vim.g.mapleader = ","
 vim.keymap.set("", "j", "gj")                   -- move down when lines wrap
 vim.keymap.set("", "k", "gk")                   -- move up when lines wrap
 vim.keymap.set("n", "<CR>", "<cmd>noh<CR>")     -- remove highlighting
-vim.keymap.set("", "S", ":s//g<left><left>")    -- replace inline
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")    -- move code blocks and indent
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")    -- move code blocks and indent
 vim.keymap.set("n", "J", "mzJ`z")               -- keep cursor in place when J

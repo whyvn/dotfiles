@@ -24,18 +24,22 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},
         }
     }
-    use 'juliaEditorSupport/julia-vim'              -- unicode characters like \alpha -> α
     -- use 'tlaplus-community/tlaplus-nvim-plugin'
     -- use 'tidalcycles/vim-tidal'
 
     use 'junegunn/goyo.vim'                         -- zen modee :)
     use 'junegunn/limelight.vim'                    -- hghilight for stuff
 
-    language_specific = true
+    local language_specific = true
     if language_specific then
         use 'kana/vim-textobj-user'
         use 'neovimhaskell/nvim-hs.vim'
         use 'isovector/cornelis'
-
+        use {
+            'Julian/lean.nvim',
+            requires = {
+                {'nvim-lua/plenary.nvim'}
+            }
+        }
     end
 end)

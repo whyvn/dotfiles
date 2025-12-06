@@ -1,3 +1,5 @@
 These are a combination of multiple computers' configurations. some use wayland while others use x11, etc.
 
-intended to be used with https://github.com/whyvn/wlroots/tree/greyscale
+intended to be used with
+- https://github.com/whyvn/wlroots/tree/greyscale
+- https://github.com/whyvn/river/tree/greyscale

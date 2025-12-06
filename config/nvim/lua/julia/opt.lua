@@ -32,10 +32,6 @@ vim.opt.relativenumber  = true
 vim.opt.signcolumn      = "yes"
 vim.opt.cmdheight       = 2
 
--- latex to unicode using julia plugin --
-vim.g.latex_to_unicode_file_types = ".*"
-vim.g.latex_to_unicode_auto = 1
-
 -- colours
 vim.opt.termguicolors = true
 colourss = 'light'
