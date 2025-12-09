@@ -2,4 +2,4 @@ These are a combination of multiple computers' configurations. some use wayland 
 
 intended to be used with
 - https://github.com/whyvn/wlroots/tree/greyscale
-- https://github.com/whyvn/river/tree/greyscale
+- https://github.com/whyvn/river/tree/wlroots-commands
